@@ -29,15 +29,16 @@ class TimeLineTableViewController: UITableViewController {
         }
         
         let controller1:MathViewController = MathViewController(nibName: "MathViewController",bundle: nil)
-        controller1.title = "11111"
-        let controller2 = UIViewController()
-        controller2.title = "22222"
+        controller1.title = "数学"
+        let controller2:MathViewController = MathViewController(nibName: "MathViewController",bundle: nil)
+        controller2.title = "国語"
         let controller3 = UIViewController()
-        controller3.title = "33333"
+        controller3.title = "英語"
+        controller3.view.backgroundColor = UIColor.blueColor()
         let controller4 = UIViewController()
-        controller4.title = "44444"
+        controller4.title = "社会"
         let controller5 = UIViewController()
-        controller5.title = "55555"
+        controller5.title = "理科"
         
         pageMenuModel.addController(controller1)
         pageMenuModel.addController(controller2)
